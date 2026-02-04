@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" id="html-root">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Palm Restaurant | Services</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <h1><i class="fas fa-utensils"></i> Palm <span>Restaurant</span></h1>
+                </div>
+                
+                <div class="language-switcher">
+                    <button id="lang-en" class="lang-btn active">EN</button>
+                    <button id="lang-ar" class="lang-btn">AR</button>
+                </div>
+                
+                <nav class="navbar">
+                    <ul class="nav-links">
+                        <li><a href="index.html" data-i18n="nav.home">Home</a></li>
+                        <li><a href="about.html" data-i18n="nav.about">About</a></li>
+                        <li><a href="services.html" class="active" data-i18n="nav.services">Services</a></li>
+                        <li><a href="contact.html" data-i18n="nav.contact">Contact</a></li>
+                    </ul>
+                    <div class="mobile-menu-btn">
+                        <i class="fas fa-bars"></i>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="page-hero">
+            <div class="container">
+                <h1 data-i18n="services.pageTitle">Our Menu & Services</h1>
+                <p data-i18n="services.pageSubtitle">Discover our culinary offerings and dining experiences</p>
+            </div>
+        </section>
+
+        <section class="menu-section">
+            <div class="container">
+                <div class="menu-tabs">
+                    <button class="menu-tab active" data-category="appetizers" data-i18n="services.appetizers">Appetizers</button>
+                    <button class="menu-tab" data-category="mains" data-i18n="services.mainCourses">Main Courses</button>
+                    <button class="menu-tab" data-category="desserts" data-i18n="services.desserts">Desserts</button>
+                    <button class="menu-tab" data-category="drinks" data-i18n="services.drinks">Drinks</button>
+                </div>
+                
+                <div class="menu-content active" id="appetizers">
+                    <div class="menu-items">
+                        <div class="menu-item">
+                            <div class="menu-item-img">
+                                <img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1381&q=80" alt="Bruschetta">
+                            </div>
+                            <div class="menu-item-text">
+                                <h3 data-i18n="services.app1Name">Tomato Bruschetta</h3>
+                                <p data-i18n="services.app1Desc">Toasted bread topped with tomatoes, garlic, fresh basil and olive oil.</p>
+                                <span class="price">$12</span>
+                            </div>
+                        </div>
+                        
+                        <div class="menu-item">
+                            <div class="menu-item-img">
+                                <img src="https://images.unsplash.com/photo-1607330289024-1538c6c8d7b0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1364&q=80" alt="Calamari">
+                            </div>
+                            <div class="menu-item-text">
+                                <h3 data-i18n="services.app2Name">Fried Calamari</h3>
+                                <p data-i18n="services.app2Desc">Lightly battered squid served with lemon aioli and marinara sauce.</p>
+                                <span class="price">$16</span>
+                            </div>
+                        </div>
+                        
+                        <div class="menu-item">
+                            <div class="menu-item-img">
+                                <img src="https://images.unsplash.com/photo-1488477181946-6428a0291777?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1387&q=80" alt="Salad">
+                            </div>
+                            <div class="menu-item-text">
+                                <h3 data-i18n="services.app3Name">Mediterranean Salad</h3>
+                                <p data-i18n="services.app3Desc">Fresh greens with feta cheese, olives, cucumbers, and house vinaigrette.</p>
+                                <span class="price">$14</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="menu-content" id="mains">
+                    <div class="menu-items">
+                        <div class="menu-item">
+                            <div class="menu-item-img">
+                                <img src="https://images.unsplash.com/photo-1565958011703-44f9829ba187?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1365&q=80" alt="Salmon">
+                            </div>
+                            <div class="menu-item-text">
+                                <h3 data-i18n="services.main1Name">Grilled Salmon</h3>
+                                <p data-i18n="services.main1Desc">Atlantic salmon with herb butter, asparagus, and roasted potatoes.</p>
+                                <span class="price">$32</span>
+                            </div>
+                        </div>
+                        
+                        <div class="menu-item">
+                            <div class="menu-item-img">
+                                <img src="https://images.unsplash.com/photo-1600891964092-4316c288032e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Steak">
+                            </div>
+                            <div class="menu-item-text">
+                                <h3 data-i18n="services.main2Name">Prime Ribeye Steak</h3>
+                                <p data-i18n="services.main2Desc">12oz ribeye with red wine reduction, grilled vegetables, and mashed potatoes.</p>
+                                <span class="price">$42</span>
+                            </div>
+                        </div>
+                        
+                        <div class="menu-item">
+                            <div class="menu-item-img">
+                                <img src="https://images.unsplash.com/photo-1563379926898-05f4575a45d8?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Pasta">
+                            </div>
+                            <div class="menu-item-text">
+                                <h3 data-i18n="services.main3Name">Truffle Mushroom Pasta</h3>
+                                <p data-i18n="services.main3Desc">Homemade fettuccine with wild mushrooms, truffle oil, and parmesan.</p>
+                                <span class="price">$26</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="services-section">
+                    <h2 class="section-title" data-i18n="services.otherServices">Other Services</h2>
+                    <div class="services-grid">
+                        <div class="service-card">
+                            <i class="fas fa-glass-cheers"></i>
+                            <h3 data-i18n="services.service1Title">Private Events</h3>
+                            <p data-i18n="services.service1Desc">Host your special occasions in our private dining room for up to 50 guests.</p>
+                        </div>
+                        
+                        <div class="service-card">
+                            <i class="fas fa-truck"></i>
+                            <h3 data-i18n="services.service2Title">Catering</h3>
+                            <p data-i18n="services.service2Desc">Let us bring the Palm Restaurant experience to your home or office.</p>
+                        </div>
+                        
+                        <div class="service-card">
+                            <i class="fas fa-wine-bottle"></i>
+                            <h3 data-i18n="services.service3Title">Wine Tasting</h3>
+                            <p data-i18n="services.service3Desc">Monthly wine tasting events featuring selections from around the world.</p>
+                        </div>
+                        
+                        <div class="service-card">
+                            <i class="fas fa-user-chef"></i>
+                            <h3 data-i18n="services.service4Title">Cooking Classes</h3>
+                            <p data-i18n="services.service4Desc">Learn culinary techniques from our chefs in intimate cooking workshops.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <h2><i class="fas fa-utensils"></i> Palm Restaurant</h2>
+                    <p data-i18n="footer.tagline">Fine dining experience since 2005</p>
+                </div>
+                
+                <div class="footer-links">
+                    <h3 data-i18n="footer.quickLinks">Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html" data-i18n="nav.home">Home</a></li>
+                        <li><a href="about.html" data-i18n="nav.about">About</a></li>
+                        <li><a href="services.html" data-i18n="nav.services">Services</a></li>
+                        <li><a href="contact.html" data-i18n="nav.contact">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-contact">
+                    <h3 data-i18n="footer.contact">Contact Us</h3>
+                    <p><i class="fas fa-map-marker-alt"></i> <span data-i18n="footer.address">123 Gourmet Street, Food City</span></p>
+                    <p><i class="fas fa-phone"></i> <span data-i18n="footer.phone">+1 (123) 456-7890</span></p>
+                    <p><i class="fas fa-envelope"></i> info@palmrestaurant.com</p>
+                </div>
+                
+                <div class="footer-social">
+                    <h3 data-i18n="footer.followUs">Follow Us</h3>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-tripadvisor"></i></a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; <span id="currentYear"></span> Palm Restaurant. <span data-i18n="footer.rights">All rights reserved.</span></p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

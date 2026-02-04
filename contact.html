@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" id="html-root">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Palm Restaurant | Contact</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <h1><i class="fas fa-utensils"></i> Palm <span>Restaurant</span></h1>
+                </div>
+                
+                <div class="language-switcher">
+                    <button id="lang-en" class="lang-btn active">EN</button>
+                    <button id="lang-ar" class="lang-btn">AR</button>
+                </div>
+                
+                <nav class="navbar">
+                    <ul class="nav-links">
+                        <li><a href="index.html" data-i18n="nav.home">Home</a></li>
+                        <li><a href="about.html" data-i18n="nav.about">About</a></li>
+                        <li><a href="services.html" data-i18n="nav.services">Services</a></li>
+                        <li><a href="contact.html" class="active" data-i18n="nav.contact">Contact</a></li>
+                    </ul>
+                    <div class="mobile-menu-btn">
+                        <i class="fas fa-bars"></i>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="page-hero">
+            <div class="container">
+                <h1 data-i18n="contact.pageTitle">Contact Us</h1>
+                <p data-i18n="contact.pageSubtitle">We'd love to hear from you. Reach out for reservations or inquiries.</p>
+            </div>
+        </section>
+
+        <section class="contact-section">
+            <div class="container">
+                <div class="contact-content">
+                    <div class="contact-info">
+                        <h2 data-i18n="contact.getInTouch">Get in Touch</h2>
+                        <p data-i18n="contact.infoText">Whether you have questions about our menu, want to make a reservation, or are interested in hosting an event, our team is here to assist you.</p>
+                        
+                        <div class="contact-details">
+                            <div class="contact-item">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <div>
+                                    <h3 data-i18n="contact.visitUs">Visit Us</h3>
+                                    <p data-i18n="contact.address">123 Gourmet Street, Food City, FC 10001</p>
+                                </div>
+                            </div>
+                            
+                            <div class="contact-item">
+                                <i class="fas fa-phone"></i>
+                                <div>
+                                    <h3 data-i18n="contact.callUs">Call Us</h3>
+                                    <p>+1 (123) 456-7890</p>
+                                </div>
+                            </div>
+                            
+                            <div class="contact-item">
+                                <i class="fas fa-envelope"></i>
+                                <div>
+                                    <h3 data-i18n="contact.emailUs">Email Us</h3>
+                                    <p>info@palmrestaurant.com</p>
+                                </div>
+                            </div>
+                            
+                            <div class="contact-item">
+                                <i class="fas fa-clock"></i>
+                                <div>
+                                    <h3 data-i18n="contact.hours">Opening Hours</h3>
+                                    <p data-i18n="contact.hoursWeekdays">Monday - Friday: 11:00 AM - 10:00 PM</p>
+                                    <p data-i18n="contact.hoursWeekend">Saturday - Sunday: 10:00 AM - 11:00 PM</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="social-contact">
+                            <h3 data-i18n="contact.followUs">Follow Us</h3>
+                            <div class="social-icons">
+                                <a href="#"><i class="fab fa-facebook"></i></a>
+                                <a href="#"><i class="fab fa-instagram"></i></a>
+                                <a href="#"><i class="fab fa-twitter"></i></a>
+                                <a href="#"><i class="fab fa-tripadvisor"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-form">
+                        <h2 data-i18n="contact.sendMessage">Send a Message</h2>
+                        <form id="contactForm">
+                            <div class="form-group">
+                                <label for="name" data-i18n="contact.name">Full Name</label>
+                                <input type="text" id="name" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="email" data-i18n="contact.email">Email Address</label>
+                                <input type="email" id="email" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="phone" data-i18n="contact.phone">Phone Number</label>
+                                <input type="tel" id="phone">
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="subject" data-i18n="contact.subject">Subject</label>
+                                <select id="subject">
+                                    <option value="" data-i18n="contact.selectOption">Select an option</option>
+                                    <option value="reservation" data-i18n="contact.reservation">Reservation Inquiry</option>
+                                    <option value="catering" data-i18n="contact.catering">Catering Service</option>
+                                    <option value="event" data-i18n="contact.event">Private Event</option>
+                                    <option value="feedback" data-i18n="contact.feedback">Feedback</option>
+                                    <option value="other" data-i18n="contact.other">Other</option>
+                                </select>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="message" data-i18n="contact.message">Message</label>
+                                <textarea id="message" rows="5" required></textarea>
+                            </div>
+                            
+                            <button type="submit" class="btn primary-btn" data-i18n="contact.sendBtn">Send Message</button>
+                        </form>
+                    </div>
+                </div>
+                
+                <div class="map-section">
+                    <h2 data-i18n="contact.findUs">Find Us</h2>
+                    <div class="map-container">
+                        <img src="https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Restaurant Location">
+                        <div class="map-overlay" data-i18n="contact.mapNote">Our restaurant is located in the heart of Food City, with ample parking available.</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <h2><i class="fas fa-utensils"></i> Palm Restaurant</h2>
+                    <p data-i18n="footer.tagline">Fine dining experience since 2005</p>
+                </div>
+                
+                <div class="footer-links">
+                    <h3 data-i18n="footer.quickLinks">Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html" data-i18n="nav.home">Home</a></li>
+                        <li><a href="about.html" data-i18n="nav.about">About</a></li>
+                        <li><a href="services.html" data-i18n="nav.services">Services</a></li>
+                        <li><a href="contact.html" data-i18n="nav.contact">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-contact">
+                    <h3 data-i18n="footer.contact">Contact Us</h3>
+                    <p><i class="fas fa-map-marker-alt"></i> <span data-i18n="footer.address">123 Gourmet Street, Food City</span></p>
+                    <p><i class="fas fa-phone"></i> <span data-i18n="footer.phone">+1 (123) 456-7890</span></p>
+                    <p><i class="fas fa-envelope"></i> info@palmrestaurant.com</p>
+                </div>
+                
+                <div class="footer-social">
+                    <h3 data-i18n="footer.followUs">Follow Us</h3>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-tripadvisor"></i></a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; <span id="currentYear"></span> Palm Restaurant. <span data-i18n="footer.rights">All rights reserved.</span></p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
